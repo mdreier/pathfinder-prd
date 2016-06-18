@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.martindreier.rpg</groupId>
+	<artifactId>pathfinder-prd-loader</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Pathfinder PRD Loader</name>
+	<description>Loads data from the official PRD website.</description>
+
+	<properties>
+		<apache.httpcomponents.version>4.5.2</apache.httpcomponents.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.martindreier.rpg</groupId>
+			<artifactId>pathfinder-prd</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- Apache HTTP Components -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${apache.httpcomponents.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>fluent-hc</artifactId>
+			<version>${apache.httpcomponents.version}</version>
+		</dependency>
+
+		<!-- jsoup HTML parser library @ http://jsoup.org/ -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+	</dependencies>
+</project>
