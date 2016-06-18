@@ -51,6 +51,7 @@ public enum Source
 	UNCHAINED("Pathfinder Unchained", "unch", "Paizo, Inc."), //
 	OCCULT_ADVENTURES("Occult Adventures", "occ", "Paizo, Inc."), //
 	ULTIMATE_INTRIGUE("Ultimate Intrigue", "ui", "Paizo, Inc."), //
+	TECHNOLOGY_GUIDE("Technology Guide", "tg", "Paizo, Inc."), //
 	;
 
 	/**
