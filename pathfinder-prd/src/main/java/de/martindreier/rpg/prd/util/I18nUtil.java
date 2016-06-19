@@ -96,7 +96,7 @@ public class I18nUtil
 
 	/**
 	 * Format a bonus with leading sign.
-	 * 
+	 *
 	 * @param bonus
 	 *          The bonus value.
 	 * @return Formatted output.
@@ -104,5 +104,21 @@ public class I18nUtil
 	public static String formatBonus(int bonus)
 	{
 		return String.format("%+d", bonus);
+	}
+
+	/**
+	 * Provide a translation for an enum value from the {@link Bundles#RULES Rules
+	 * bundle}. Used by constructors for enum types.
+	 *
+	 * @param enumValue
+	 *          The value to translate.
+	 * @param prefix
+	 *          Type-specific prefix of the translation key. Provided without
+	 *          separator (.).
+	 * @return Translated value.
+	 */
+	public static String translateEnumValue(Enum<?> enumValue, String prefix)
+	{
+		return getResourceBundle(Bundles.RULES).getString(prefix + "." + enumValue.name().toLowerCase());
 	}
 }
